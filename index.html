@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Quiz Application</title>
+    <link rel="stylesheet" href="mathe.css">
+    <link rel="icon" href="Logo.jpg">
+
+</head>
+
+<body>
+
+    <!-- AUDIO USED FOR CORRECT & INCORRECT SOUND EFFECT -->
+    <audio id="correctSound" src="correct_ans.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect_ans.mp3"></audio>
+
+
+    <form action="" class="form" id="form">
+
+        <h2><span>R</span>andom <span>M</span>ath <span>Q</span>uiz</h2>
+
+
+        <div id="timer">Timer: <span id="timer-value">20</span> seconds</div>
+
+
+
+        <h4 class="score" id="score">
+            Your Score: <span>0</span>
+        </h4>
+
+
+        <h1 id="ques">
+            What is 1 multiply by 1 ?
+
+        </h1>
+
+        <input type="number" step="0.01" class="input" id="input" autofocus placeholder="Enter your answer"
+            autocomplete="off">
+        <div class="btns">
+
+            <button type="submit" class="btn" value="Submit">Submit</button>
+            <button type="reset" class="btn" id="reset-btn" value="Reset">Reset Score</button>
+        </div>
+
+    </form>
+
+    <script src="mathe.js"></script>
+</body>
+
+</html>
